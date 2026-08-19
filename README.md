@@ -4,13 +4,13 @@ A supervised machine learning pipeline using a **Decision Tree Classifier** to d
 
 Academic project — Faculty of Sciences and Technology, Tangier (Module: Data Mining, Major SSD, 2025/2026).
 
-## 📊 Overview
+## Overview
 
 The dataset contains **284,807** real European credit card transactions from September 2013, of which only **492 (≈0.17%)** are fraudulent. This extreme class imbalance is the central challenge of the project: a naive model predicting "normal" for every transaction would already score ~99.8% accuracy while catching zero fraud. The project focuses on handling this imbalance correctly and evaluating with metrics that actually reflect fraud-detection performance (precision, recall, F1-score, confusion matrix) rather than raw accuracy.
 
 28 of the 31 features (`V1`–`V28`) are PCA-anonymized for confidentiality. Only `Time`, `Amount`, and the target `Class` are in their original form.
 
-## 🧠 Methodology
+## Methodology
 
 1. **Data Loading & Quality Check** — verify no missing values, inspect the class distribution.
 2. **Feature/Target Split** — `X` = all columns except `Class`, `y` = `Class`.
@@ -22,7 +22,7 @@ The dataset contains **284,807** real European credit card transactions from Sep
 5. **Evaluation** — confusion matrix, classification report (precision/recall/F1 per class), and a log-scale bar chart of the four confusion-matrix quadrants (TN/FP/FN/TP).
 6. **Visualization** — the trained tree is plotted (depth capped at 3 for readability) to show exactly which variable thresholds (e.g. `V14`, `V12`, `V17`) drive a fraud classification — a key advantage of Decision Trees over black-box models.
 
-## 📈 Results
+## Results
 
 On the held-out test set:
 
@@ -62,7 +62,7 @@ fraud-detection-credit-card/
     └── decision_tree.png
 ```
 
-## 🚀 Setup & Usage
+## Setup & Usage
 
 The dataset (~150 MB) is not included in this repository (too large for GitHub, and not ours to redistribute). Download it from Kaggle:
 
@@ -80,18 +80,9 @@ python main.py
 
 This prints the classification report and confusion matrix, and saves both the confusion-matrix bar chart and the decision tree plot to `outputs/`.
 
-## 🛠️ Technologies
+## Technologies
 
 - Python
 - Pandas
 - Scikit-learn (DecisionTreeClassifier, train_test_split, classification_report, confusion_matrix, plot_tree)
 - Matplotlib
-
-## 👥 Authors
-
-- Rhomari Salma
-- Erradi Youssef
-- Bouaksi Mohamed
-
-**Supervised by:** Pr. Abdelaziz Assadouq
-**Major:** SSD — Statistics and Data Science

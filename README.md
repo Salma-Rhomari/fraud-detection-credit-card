@@ -64,7 +64,7 @@ fraud-detection-credit-card/
 
 ## Setup & Usage
 
-The dataset (~150 MB) is not included in this repository (too large for GitHub, and not ours to redistribute). Download it from Kaggle:
+The dataset (~150 MB) is not included in this repository (too large for GitHub). Download it from Kaggle:
 
 **[Credit Card Fraud Detection — Kaggle](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)**
 
